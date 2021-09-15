@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-import "../styles/Navbar.css";
+
 import { LocalStateContext } from "../contexts/sidebarState";
 
 function Navbar() {
   const { setSideBarActive } = useContext(LocalStateContext);
   return (
-    <div className="navbar">
+    <div className="navigbar">
       <div className="nav-left" onClick={() => setSideBarActive(true)}>
-        <MenuIcon className="navbar__menu-icon" />
+        <MenuIcon className="navigbar__menu-icon" />
         <span>All</span>
       </div>
-      <ul className="navbar__menu">
+      <ul className="navigbar__menu">
         <li>Today's Deals</li>
         <li>Sell</li>
         <li>Registry</li>

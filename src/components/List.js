@@ -1,9 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { LocalStateContext } from "../contexts/sidebarState";
+
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import SubList from "./SubList";
-import "../styles/List.css";
-import { LoupeTwoTone } from "@material-ui/icons";
 
 function List({ category, sectionId }) {
   const { setTogglList } = useContext(LocalStateContext);

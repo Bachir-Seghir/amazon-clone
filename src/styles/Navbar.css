@@ -1,4 +1,4 @@
-.navbar {
+.navigbar {
   background-color: #232f3e;
   padding: 8px 12px;
   display: flex;
@@ -6,7 +6,7 @@
   color: white;
   align-items: stretch;
 }
-.navbar > * {
+.navigbar > * {
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -23,12 +23,12 @@
   box-shadow: 0 0 0 1px white;
 }
 
-.navbar__menu-icon {
+.navigbar__menu-icon {
   color: white;
   margin-right: 2px;
 }
 
-.navbar__menu {
+.navigbar__menu {
   display: flex;
   flex-grow: 2;
   list-style: none;
@@ -37,13 +37,13 @@
   margin: 0;
   margin-left: 10px;
 }
-.navbar__menu > li {
+.navigbar__menu > li {
   font-size: 14px;
   font-weight: 700;
   padding: 4px 10px;
   cursor: pointer;
 }
-.navbar__menu > li:hover {
+.navigbar__menu > li:hover {
   box-shadow: 0 0 0 1px white;
 }
 

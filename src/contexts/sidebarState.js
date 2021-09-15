@@ -12,7 +12,11 @@ const SideBarStateProvider = ({ children }) => {
     itemId: undefined,
   });
   const [selectedCategory, setSelectedCategory] = useState([]);
-
+  useEffect(() => {
+    if (!sideBarActive) {
+      setTogglList({ active: false, sectionId: undefined, itemId: undefined });
+    }
+  }, [sideBarActive]);
   useEffect(() => {
     if (togglList.sectionId && togglList.itemId) {
       const section = dataSet.filter(

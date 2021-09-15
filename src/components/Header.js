@@ -1,10 +1,11 @@
 import React from "react";
+
 import logo from "../styles/images/Amazon_logo.svg";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import LanguageIcon from "@material-ui/icons/Language";
 import SearchIcon from "@material-ui/icons/Search";
-import "../styles/Header.css";
+
 import Navbar from "./Navbar";
 
 function Header() {
@@ -58,10 +59,12 @@ function Header() {
               <p>Returns</p>
               <h4>& Orders</h4>
             </div>
-            <div className="header__option cart">
-              <ShoppingCartOutlinedIcon fontSize="large" />
-              <span className="cart__count">0</span>
-              <h4>Cart</h4>
+            <div className="header__option">
+              <div className="cart">
+                <ShoppingCartOutlinedIcon fontSize="large" />
+                <span className="cart__count">0</span>
+                <h3>Cart</h3>
+              </div>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   color: white;
+  z-index: 0;
 }
 
 .header__belt {
@@ -15,11 +16,9 @@
 }
 
 .header__left {
-  flex-grow: 1;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 220px;
 }
 .header__logo {
   margin-left: 6px;
@@ -41,8 +40,15 @@
   padding: 4px;
   height: 100%;
   cursor: pointer;
+  line-height: 15px;
 }
-
+.header__location p {
+  font-size: 13px;
+}
+.header__location h4 {
+  font-size: 14px;
+  font-weight: 800;
+}
 .header__location:hover {
   box-shadow: 0 0 0 1px white;
 }
@@ -67,6 +73,7 @@
   border: none;
   border-right: 1px solid #cdcdcd;
   background-color: #f3f3f3;
+  font-size: 13px;
 }
 .header__search-select > option {
   background: white;
@@ -115,12 +122,12 @@
   box-shadow: 0 0 0 1px white;
 }
 .header__option p {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 13px;
+  line-height: 15px;
 }
 .header__option h4 {
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 17px;
   font-weight: 700;
 }
 .header__lang {
@@ -128,20 +135,29 @@
   max-width: 50px;
 }
 
-.header__option.cart {
+.cart {
+  display: flex;
   flex-direction: row;
   position: relative;
   align-items: center;
+  justify-content: center;
+  width: 80px;
+  align-self: center;
+  height: 100%;
 }
-.header__option.cart svg {
+.cart > h3 {
+  font-weight: 700;
+}
+.header__option .cart svg {
   position: relative;
   top: 7px;
 }
-.header__option .cart__count {
+.cart__count {
   position: absolute;
-  left: 29%;
   top: 1px;
   color: #f08804;
   font-size: 14px;
   font-weight: bold;
+  left: 30%;
+  transform: translateX(-50%);
 }

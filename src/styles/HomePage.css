@@ -1,0 +1,43 @@
+.homepage {
+  background: #eaeded;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.homepage__banner {
+  height: 230px;
+  max-height: 230px;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.homepage__banner > * {
+  max-height: 230px;
+}
+.carousel-inner {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black,
+    black,
+    transparent
+  ) !important;
+  height: 600px !important;
+  max-height: 600px !important;
+}
+
+.homepage__content {
+  padding: 0 10px 0;
+  position: relative;
+}
+
+.homepage__card-layout {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

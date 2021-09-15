@@ -1,8 +1,8 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
+import classNames from "classnames";
+
 import { LocalStateContext } from "../contexts/sidebarState";
 import ArrowBackRoundedIcon from "@material-ui/icons/ArrowBackRounded";
-import classNames from "classnames";
-import "../styles/List.css";
 
 const SubList = () => {
   const { setTogglList, togglList, selectedCategory, setSelectedCategory } =
@@ -15,8 +15,12 @@ const SubList = () => {
       <div
         className="subList__return"
         onClick={() => {
-          setTogglList((state) => ({ ...state, active: false }));
-          setSelectedCategory([]);
+          setTogglList((state) => ({
+            ...state,
+            active: false,
+            sectionId: undefined,
+            itemId: undefined,
+          }));
         }}>
         <ArrowBackRoundedIcon color="action" />
         <span>Main Menu</span>

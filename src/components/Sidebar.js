@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import classNames from "classnames";
-import Accountbadge from "./Accountbadge";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
-import List from "./List";
-import "../styles/Sidebar.css";
 import { LocalStateContext } from "../contexts/sidebarState";
+
+import Accountbadge from "./Accountbadge";
+import List from "./List";
 import SubList from "./SubList";
 
 const ListSeparator = () => <div className="sidebar__menu-separator"></div>;

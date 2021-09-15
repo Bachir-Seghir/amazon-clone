@@ -1,8 +1,11 @@
 .sidebar {
-  z-index: 0;
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 500ms ease 0s;
 }
 .sidebar.is-active {
-  z-index: 1;
+  visibility: visible;
+  transition: visibility 50ms ease 0s;
 }
 .sidebar__bg {
   background-color: rgba(0, 0, 0, 0.8);
@@ -14,13 +17,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
   will-change: opacity;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 100ms ease-out;
 }
 .sidebar__bg.is-active {
-  transition: opacity 0.15s ease-in;
-  opacity: 1;
+  transition: opacity 130ms ease-in;
+  opacity: 200;
 }
 .sidebar__menu {
   position: absolute;
@@ -29,19 +31,18 @@
   width: 365px;
   height: 100vh;
   background-color: white;
-  box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
-  z-index: 2;
   will-change: transform;
   transform: translateX(-365px);
-  transition: transform 0.15s ease-out;
+  transition: transform 150ms ease-out 50ms;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 .sidebar__menu.is-active {
+  box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.4);
   transform: translateX(0);
-  transition: transform 0.15s ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .sidebar__close {
@@ -49,15 +50,14 @@
   left: 370px;
   top: 0;
   cursor: pointer;
-  z-index: 2;
   color: white;
   will-change: visibility;
   visibility: hidden;
-  transition: visibility 50ms ease 0s;
+  transition: visibility 100ms ease 0s;
 }
 .sidebar__close.is-active {
   visibility: visible;
-  transition: visibility 0.1s ease 0.35s;
+  transition: visibility 100ms ease 150ms;
 }
 
 .sidebar__section-header {
