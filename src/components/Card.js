@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Card.css";
-import imgSrc from "../styles/images/item-electronic.jpeg";
 function Card({ type }) {
   if (type === "multiple-content") {
     return (
@@ -55,8 +54,7 @@ function Card({ type }) {
           <div className="card__body">
             <a href="/" className="card__body__item">
               <img
-                src={imgSrc}
-                //src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
                 alt=""
               />
             </a>

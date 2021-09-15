@@ -9,7 +9,6 @@ function HomePage() {
         <Carousel variant="dark">
           <Carousel.Item>
             <img
-              width="1500"
               className="carousel__image"
               src="https://m.media-amazon.com/images/I/711Y9Al9RNL._SX3000_.jpg"
             />
@@ -20,7 +19,6 @@ function HomePage() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              width="1500"
               className="carousel__image"
               src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             />
