@@ -4,6 +4,7 @@
   max-width: 1869px;
   overflow: hidden;
   z-index: 0;
+  position: relative;
 }
 
 .homepage__banner {

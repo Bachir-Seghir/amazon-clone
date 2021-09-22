@@ -2,6 +2,7 @@
   z-index: 1;
   visibility: hidden;
   transition: visibility 500ms ease 0s;
+  position: relative;
 }
 .sidebar.is-active {
   visibility: visible;
@@ -40,7 +41,6 @@
   overflow-y: scroll;
 }
 .sidebar__menu.is-active {
-  box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.4);
   transform: translateX(0);
   transition: transform 100ms ease-in-out;
 }
@@ -48,7 +48,7 @@
 .sidebar__close {
   position: absolute;
   left: 370px;
-  top: 0;
+  top: 6px;
   cursor: pointer;
   color: white;
   will-change: visibility;

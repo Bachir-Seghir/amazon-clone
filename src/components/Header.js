@@ -14,9 +14,9 @@ function Header() {
       <div className="header">
         <div className="header__belt">
           <div className="header__left">
-            <span className="header__logo">
+            <a href="/" className="header__logo">
               <img src={logo} alt="eCommerce amazon-colne logo" />
-            </span>
+            </a>
 
             <div className="header__location">
               <LocationOnOutlinedIcon fontSize="small" />

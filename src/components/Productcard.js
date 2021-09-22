@@ -1,17 +1,17 @@
 import React from "react";
-import prdImg from "../styles/images/white-faced-watch.jpg";
 import "../styles/ProductCard.css";
+import RatingFback from "./RatingFback";
 
 function Productcard() {
   return (
     <div className="productCard">
       <div className="productCard__wrap">
-        <img
-          src={prdImg}
-          //src="https://m.media-amazon.com/images/I/71AmKW4yuMS._AC_UL320_.jpg"
-          alt=""
-          className="productCard__image"
-        />
+        <a href="/" className="productCard__image">
+          <img
+            src="https://m.media-amazon.com/images/I/81AbJXWCxXL._AC_SX679_.jpg"
+            alt=""
+          />
+        </a>
         <div className="productCard__details">
           <p className="productCard__desc">
             Acer Aspire 5 A515-46-R14K Slim Laptop | 15.6" Full HD IPS | AMD
@@ -21,13 +21,12 @@ function Productcard() {
             3350U Quad-Core Mobile Processor | 4GB DDR4 | 128GB NVMe SSD | WiFi
             6 | Backlit KB | Amazon Alexa | Windows 10 Home (S mode)
           </p>
-          <div className="productCard__owner">by bachir</div>
-          <ul className="productCard__rating">
-            <li>⭐</li>
-            <li>⭐</li>
-            <li>⭐</li>
-            <li>⭐</li>
-          </ul>
+          <a href="/" className="productCard__owner">
+            by bachir
+          </a>
+
+          <RatingFback rates={4.5} status={"readOnly"} />
+
           <div className="productCard__pricing">
             <div className="productCard__price">
               <span>EUR</span>

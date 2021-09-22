@@ -51,17 +51,17 @@ export const data = [
             {
               id: "data1-a-a1",
               title: "Computers & Tablets",
-              pathname: "/categories/computers/Computers_Tablets",
+              pathname: "products/categories/computers/Computers_Tablets",
             },
             {
               id: "data1-a-a2",
               title: "Laptops",
-              pathname: "/categories/computers/Laptops",
+              pathname: "products/categories/computers/Laptops",
             },
             {
               id: "data1-a-a3",
               title: "Printers",
-              pathname: "/categories/computers/Printers",
+              pathname: "products/categories/computers/Printers",
             },
           ],
         },
@@ -75,17 +75,18 @@ export const data = [
             {
               id: "data1-b-b1",
               title: "Cell Phones & Accessories",
-              pathname: "/categories/Electronics/Cell_Phones_Accessories",
+              pathname:
+                "products/categories/Electronics/Cell_Phones_Accessories",
             },
             {
               id: "data1-b-b2",
               title: "GPS & Navigation",
-              pathname: "/categories/Electronics/GPS_Navigation",
+              pathname: "products/categories/Electronics/GPS_Navigation",
             },
             {
               id: "data1-b-b3",
               title: "Television & Video",
-              pathname: "/categories/Electronics/Television_Video",
+              pathname: "products/categories/Electronics/Television_Video",
             },
           ],
         },
@@ -99,17 +100,17 @@ export const data = [
             {
               id: "data1-c-c1",
               title: "painting, Drawing",
-              pathname: "/categories/Arts_Crafts/painting_Drawing",
+              pathname: "products/categories/Arts_Crafts/painting_Drawing",
             },
             {
               id: "data1-c-c2",
               title: "Crafting",
-              pathname: "/categories/Arts_Crafts/Crafting",
+              pathname: "products/categories/Arts_Crafts/Crafting",
             },
             {
               id: "data1-c-c3",
               title: "Sewing",
-              pathname: "/categories/Arts_Crafts/Sewing",
+              pathname: "products/categories/Arts_Crafts/Sewing",
             },
           ],
         },

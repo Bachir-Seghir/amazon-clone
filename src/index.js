@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import SideBarStateProvider from "./contexts/sidebarState";
 import App from "./components/App";
 
