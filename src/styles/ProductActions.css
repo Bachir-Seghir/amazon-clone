@@ -5,3 +5,24 @@
   border-radius: 8px;
   padding: 14px 18px;
 }
+
+.productActions__price {
+  display: flex;
+  flex-direction: column;
+}
+.productActions__price h2 {
+  font-size: 20px;
+  color: #b12704;
+}
+.productActions__price h2 > span {
+  margin-right: 6px;
+}
+
+.productActions__shipping {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: gray;
+  font-weight: 700;
+  padding: 5px 0;
+}

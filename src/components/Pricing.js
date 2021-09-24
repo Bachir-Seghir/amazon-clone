@@ -19,7 +19,7 @@ function Pricing({ fullMode, pricing }) {
         {fullMode && <h4>Price :</h4>}
         {!fullMode && <span>EUR</span>}
         <h2>
-          {fullMode && "EUR "}
+          {fullMode && <span>EUR</span>}
           {pricing.discount > 0
             ? pricing.price - (pricing.price * pricing.discount) / 100
             : pricing.price}

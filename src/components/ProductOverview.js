@@ -5,8 +5,8 @@ function ProductOverview({ overview }) {
     <div className="productOverview">
       <table>
         <tbody>
-          {Object.entries(overview).map((item) => (
-            <tr className="productOverview__item">
+          {Object.entries(overview).map((i, item) => (
+            <tr className="productOverview__item" key={i}>
               <td>
                 <strong>{item[0]}</strong>
               </td>

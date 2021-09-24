@@ -1,12 +1,12 @@
 import React from "react";
 
 import logo from "../styles/images/Amazon_logo.svg";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import LanguageIcon from "@material-ui/icons/Language";
 import SearchIcon from "@material-ui/icons/Search";
 
 import Navbar from "./Navbar";
+import DeliveryLocation from "./DeliveryLocation";
 
 function Header() {
   return (
@@ -19,11 +19,7 @@ function Header() {
             </a>
 
             <div className="header__location">
-              <LocationOnOutlinedIcon fontSize="small" />
-              <section>
-                <p>Deliver to</p>
-                <h4>Algeria</h4>
-              </section>
+              <DeliveryLocation />
             </div>
           </div>
           <div className="header__fill">

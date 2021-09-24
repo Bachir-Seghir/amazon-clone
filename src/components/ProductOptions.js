@@ -42,6 +42,7 @@ export const OptionSelector = ({ option }) => {
           if (type === "text") {
             return (
               <li
+                key={item.value}
                 className={classNames("option__item", {
                   "is-active": selectedItem === item.name,
                 })}
@@ -54,6 +55,7 @@ export const OptionSelector = ({ option }) => {
           } else if (type === "image") {
             return (
               <li
+                key={item.value}
                 className={classNames("option__item", {
                   "is-active": selectedItem === item.name,
                 })}

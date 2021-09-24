@@ -17,9 +17,10 @@ import Pricing from "./Pricing";
 export const product = {
   id: "prod1",
   name: "Samsung Tablet",
+  stock: 12,
   pricing: {
     price: 199,
-    discount: 20,
+    discount: 50,
   },
   cardImgSrc: src400,
   images: [
@@ -160,7 +161,7 @@ function Product() {
           </div>
         </div>
         <div className="product__actions">
-          <ProductActions />
+          <ProductActions product={product} />
         </div>
       </div>
     </div>
