@@ -3,54 +3,10 @@ import classNames from "classnames";
 
 import "../styles/ProductOptions.css";
 
-const product = {
-  id: "prod1",
-  name: "Samsung Tablet",
-  price: 200,
-  options: [
-    {
-      id: "o1",
-      type: "text",
-      title: "color",
-      values: [
-        { name: "white", value: "#fff" },
-        { name: "blue", value: "#12aa" },
-        { name: "gray", value: "#555" },
-      ],
-    },
-    {
-      id: "o3",
-      title: "type",
-      type: "image",
-      values: [
-        {
-          name: "stereo",
-          value: "https://m.media-amazon.com/images/I/31Z0ags7MWL._SS36_.jpg",
-        },
-        {
-          name: "mono",
-          value: "https://m.media-amazon.com/images/I/41NmGdDm8GL._SS36_.jpg",
-        },
-      ],
-    },
-    {
-      id: "o2",
-      type: "text",
-      title: "size",
-      values: [
-        { name: "16GB", value: 16 },
-        { name: "32GB", value: 32 },
-        { name: "64GB", value: 64 },
-        { name: "128GB", value: 128 },
-      ],
-    },
-  ],
-};
-
-function ProductOptions() {
+function ProductOptions({ options }) {
   return (
     <div className="options">
-      {product.options.map((option) => (
+      {options.map((option) => (
         <OptionSelector key={option.id} option={option} />
       ))}
     </div>

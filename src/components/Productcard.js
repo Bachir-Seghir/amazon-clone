@@ -1,16 +1,14 @@
 import React from "react";
 import "../styles/ProductCard.css";
+import Pricing from "./Pricing";
 import RatingFback from "./RatingFback";
 
-function Productcard() {
+function Productcard({ product }) {
   return (
     <div className="productCard">
       <div className="productCard__wrap">
-        <a href="/" className="productCard__image">
-          <img
-            src="https://m.media-amazon.com/images/I/81AbJXWCxXL._AC_SX679_.jpg"
-            alt=""
-          />
+        <a href="/product" className="productCard__image">
+          <img src={product.cardImgSrc} alt="" />
         </a>
         <div className="productCard__details">
           <p className="productCard__desc">
@@ -27,18 +25,7 @@ function Productcard() {
 
           <RatingFback rates={4.5} status={"readOnly"} />
 
-          <div className="productCard__pricing">
-            <div className="productCard__price">
-              <span>EUR</span>
-              <h2>85.30</h2>
-            </div>
-            <h4 className="productCard__oldPrice">EUR 112.58 </h4>
-            <div className="productCard__price">
-              <span>EUR</span>
-              <h2>40</h2>
-              <p>Shipping to Algeria </p>
-            </div>
-          </div>
+          <Pricing fullMode={false} pricing={product.pricing} />
         </div>
       </div>
     </div>

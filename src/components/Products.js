@@ -3,6 +3,7 @@ import Productcard from "./Productcard";
 import "../styles/Products.css";
 import PaginationComp from "./PaginationComp";
 import Filters from "./Filters";
+import { product } from "./Product";
 
 function Products() {
   return (
@@ -24,14 +25,11 @@ function Products() {
         </div>
         <PaginationComp currentPage={7} />
         <div className="products__layout">
-          <Productcard />
-          <Productcard />
-          <Productcard />
-          <Productcard />
-          <Productcard />
-          <Productcard />
-          <Productcard />
-          <Productcard />
+          <Productcard product={product} />
+          <Productcard product={product} />
+          <Productcard product={product} />
+          <Productcard product={product} />
+          <Productcard product={product} />
         </div>
         <PaginationComp currentPage={1} />
       </div>

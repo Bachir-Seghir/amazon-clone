@@ -56,32 +56,3 @@
   font-size: 12px;
   margin-right: 5px;
 }
-
-.productCard__pricing {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.productCard__price {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-}
-.productCard__price > span {
-  font-size: 14px;
-  align-self: flex-start;
-  margin-right: 5px;
-}
-
-.productCard__oldPrice {
-  font-size: 14px;
-  text-decoration: line-through;
-  color: gray;
-}
-
-.productCard__price > p {
-  font-size: 14px;
-  margin-left: 10px;
-  color: gray;
-}

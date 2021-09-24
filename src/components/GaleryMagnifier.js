@@ -35,7 +35,7 @@ function GaleryMagnifier({ images }) {
               height: dimensions.height,
             },
             enlargedImageContainerDimensions: {
-              width: "150%",
+              width: "205%",
               height: "200%",
             },
             shouldUsePositiveSpaceLens: true,

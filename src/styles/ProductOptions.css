@@ -37,7 +37,7 @@
 
 .option__item {
   margin-right: 15px;
-  border: 1px solid rgb(180, 172, 172);
+  border: 1px #d5d9d9 solid;
   display: flex;
   justify-content: center;
   align-items: center;
