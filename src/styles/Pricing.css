@@ -60,39 +60,12 @@
   text-align: end;
   margin-right: 15px;
 }
-/* .pricing.full {
-  margin-bottom: 10px;
+.full .pricing__shipping {
+  margin-left: 103px;
 }
-.full > .pricing__price {
-  line-height: 20px;
-  color: #b12704;
-  flex-wrap: nowrap;
-  width: auto;
-}
-.full > .pricing__price > p {
-  font-size: 14px;
-  line-height: 14px;
-  margin-right: 10px;
-  font-weight: 500;
-}
-.full > .pricing__price > span {
-  font-size: 20px;
-}
-
-.full .pricing__oldPrice {
-  margin-left: 8px;
-}
-.full > .pricing__price .shipping > * {
-  font-size: 14px;
+.pricing__unavailable {
   color: gray;
-  line-height: 16px;
-  margin: 0;
-  margin-right: 4px;
-  font-weight: 500;
-  align-self: center;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
 }
-.full .shipping {
-  margin-left: 10px;
-  align-items: center;
-  width: auto;
-} */

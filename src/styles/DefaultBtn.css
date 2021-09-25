@@ -1,0 +1,20 @@
+.defaultBtn {
+  text-align: center;
+  outline: none;
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  margin: 8px 0;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.25);
+}
+
+.defaultBtn:hover {
+  background: #f7ca00;
+  border-color: #f2c200;
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.5);
+}

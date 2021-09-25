@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "../styles/Product.css";
@@ -17,10 +17,10 @@ import Pricing from "./Pricing";
 export const product = {
   id: "prod1",
   name: "Samsung Tablet",
-  stock: 12,
+  stock: 20,
   pricing: {
     price: 199,
-    discount: 50,
+    discount: 20,
   },
   cardImgSrc: src400,
   images: [
@@ -124,7 +124,11 @@ function Product() {
             </a>
             <RatingFback rates={4.3} status={"readOnly"} />
           </div>
-          <Pricing fullMode={true} pricing={product.pricing} />
+          <Pricing
+            fullMode={true}
+            pricing={product.pricing}
+            stock={product.stock}
+          />
           <Divider light={true} />
           <div className="product__details__specs">
             <ProductOptions options={product.options} />
