@@ -28,7 +28,7 @@ function Pricing({ fullMode, pricing, stock }) {
           <div id="shipping" className="pricing__shipping">
             {fullMode && <span>+</span>}
             <span>EUR</span>
-            <h2>40</h2>
+            <h2>{pricing.shipping}</h2>
             <p>Shipping to Algeria </p>
           </div>
         </div>

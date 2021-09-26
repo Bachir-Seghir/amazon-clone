@@ -4,7 +4,7 @@
   max-width: 1500px;
   margin: auto;
   background-color: white;
-  padding: 26px 0;
+  padding-bottom: 26px;
 }
 
 .product__wrap {
@@ -23,9 +23,6 @@
 .product__details {
   grid-column: auto / span 4;
   min-height: 600px;
-}
-
-.product__actions {
 }
 
 /* ============================= */

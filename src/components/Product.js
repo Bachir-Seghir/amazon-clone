@@ -13,14 +13,18 @@ import ProductOptions from "./ProductOptions";
 import ProductOverview from "./ProductOverview";
 import ProductActions from "./ProductActions";
 import Pricing from "./Pricing";
+import Wayfinding from "./Wayfinding";
+import SocialMedia from "./SocialMedia";
 
 export const product = {
   id: "prod1",
-  name: "Samsung Tablet",
-  stock: 20,
+  name: "Logitech H390 Wired Headset, Stereo Headphones with Noise-Cancelling Microphone, USB, In-Line Controls, PC/Mac/Laptop - Black",
+  stock: 10,
+  seller: "Bachir",
   pricing: {
     price: 199,
     discount: 20,
+    shipping: 15,
   },
   cardImgSrc: src400,
   images: [
@@ -92,35 +96,16 @@ export const product = {
 function Product() {
   return (
     <div className="product">
-      <div className="product__path">
-        <ul>
-          <li>
-            <a href="/">Computers</a>
-            <KeyboardArrowRightIcon />
-          </li>
-          <li>
-            <a href="/">Computers & Tablets</a>
-            <KeyboardArrowRightIcon />
-          </li>
-          <li>
-            <a href="/">Tablets</a>
-          </li>
-        </ul>
-      </div>
+      <Wayfinding />
       <div className="product__wrap">
         <div className="product__galery">
           <GaleryMagnifier images={product.images} />
         </div>
-
         <div className="product__details">
           <div className="product__details__head">
-            <p className="product__details__title">
-              Logitech H390 Wired Headset, Stereo Headphones with
-              Noise-Cancelling Microphone, USB, In-Line Controls, PC/Mac/Laptop
-              - Black
-            </p>
+            <p className="product__details__title">{product.name}</p>
             <a href="/" className="product__details__seller">
-              By Bachir
+              By {product.seller}
             </a>
             <RatingFback rates={4.3} status={"readOnly"} />
           </div>
@@ -165,7 +150,9 @@ function Product() {
           </div>
         </div>
         <div className="product__actions">
+          <SocialMedia />
           <ProductActions product={product} />
+          <SocialMedia />
         </div>
       </div>
     </div>

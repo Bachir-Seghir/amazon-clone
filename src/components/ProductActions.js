@@ -26,12 +26,31 @@ function ProductActions({ product }) {
         <>
           <div className="productActions__shipping">
             <p>
-              <span>EUR 40</span> Shipping & Import Fees Deposit to Algeria
+              <span>EUR {pricing.shipping}</span> Shipping & Import Fees Deposit
+              to Algeria
             </p>
           </div>
           <DeliveryLocation large={true} />
           <QuantitySelector stock={stock} />
           <AddToCartBtn />
+          <div className="productActions__sellerInfo">
+            <table>
+              <tbody>
+                <tr>
+                  <td>ships from</td>
+                  <td>
+                    <a href="/">Amazon.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>sold By</td>
+                  <td>
+                    <a href="/">Amazon.com</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </>
       ) : (
         <div className="productActions__unavailable">

@@ -48,7 +48,8 @@ function QuantitySelector({ stock }) {
             "In Stock"
           ) : (
             <b>
-              Only {stock} piece{stock > 1 ? "s" : ""} left in Stock !
+              Only {stock} left in Stock ! <br />
+              (more on the way)
             </b>
           )}
         </span>
