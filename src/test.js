@@ -4,12 +4,12 @@ function test() {
   return (
     <div>
       <div className="test">
-        <ul>
+        <ol>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
-        </ul>
+        </ol>
       </div>
     </div>
   );
