@@ -2,8 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 
 function Card({ title, image, url }) {
-
-
   /* if (type === 'multiple-content') {
     return (
       <div className='o-card o-card--multiple'>
