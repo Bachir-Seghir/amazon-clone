@@ -47,7 +47,7 @@ function HomePage() {
       <div className='homepage__content'>
         <div className='homepage__card-layout'>
           {data.allCards.map((card) => (
-            <Card key={card.id} {...card} />
+            <Card key={card.id} {...card} url={`/products/${card.title}`} />
           ))}
         </div>
       </div>

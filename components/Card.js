@@ -1,16 +1,7 @@
 import React from 'react';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-function Card({ title, image }) {
-  const router = useRouter();
-  const handleCardClick = (e) => {
-    e.preventDefault();
-    router.push({
-      pathname: '/products/[dpt]',
-      query: { dpt: title },
-    });
-  };
-
+function Card({ title, image, url }) {
   /* if (type === 'multiple-content') {
     return (
       <div className='o-card o-card--multiple'>
@@ -75,14 +66,16 @@ function Card({ title, image }) {
           <h2>{title}</h2>
         </div>
         <div className='card__body'>
-          <div className='card__body__item' onClick={handleCardClick}>
-            <img src={image} alt='' />
-          </div>
+          <Link href={url}>
+            <a className='card__body__item'>
+              <img src={image} alt='' />
+            </a>
+          </Link>
         </div>
         <div className='card__footer'>
-          <a href='/' onClick={handleCardClick}>
-            Shop Now
-          </a>
+          <Link href={url}>
+            <a>Shop Now</a>
+          </Link>
         </div>
       </div>
     </div>
