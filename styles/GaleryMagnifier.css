@@ -18,7 +18,7 @@
 }
 
 .galery__magnify > div::before {
-  content: "";
+  content: '';
   padding-top: 80%;
   display: block;
 }
@@ -54,6 +54,9 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.galery__list__item img {
+  width: 40px;
 }
 .galery__list__item.is-active {
   border: 1px solid rgba(243, 93, 6, 0.795);

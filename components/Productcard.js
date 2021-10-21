@@ -4,13 +4,16 @@ import RatingFback from './RatingFback';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import AddToCart from './AddToCart';
+import imgsrc from '../public/AC_SX466_.jpg'
 
 function Productcard({ product }) {
   return (
     <div className='productCard'>
       <div className='productCard__wrap'>
         <Link href={`/product/${product.id}`}>
-          <a className='productCard__image'>image</a>
+          <a className='productCard__image'>
+            <img src={imgsrc} alt="" />
+          </a>
         </Link>
         <div className='productCard__details'>
           <p className='productCard__title'>{product.title}</p>

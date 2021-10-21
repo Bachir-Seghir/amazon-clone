@@ -113,7 +113,7 @@ function Product({ id }) {
       <Wayfinding id={product.id}/>
       <div className='product__wrap'>
         <div className='product__galery'>
-           {/* <GaleryMagnifier images={product.images} /> */} 
+           <GaleryMagnifier /> 
         </div>
         <div className='product__details'>
           <div className='product__details__head'>

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import ReactImageMagnify from 'react-image-magnify';
+import imgsrc from '../public/AC_SX466_.jpg';
+import imgsrclarge from '../public/AC_SL1500_.jpg';
 //import reactImageSize from 'react-image-size';
-function GaleryMagnifier({ images }) {
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+function GaleryMagnifier() {
+  const [selectedImage, setSelectedImage] = useState();
 
   const [dimensions, setDimensions] = useState({ width: 1203, height: 1274 });
 
@@ -24,10 +26,10 @@ function GaleryMagnifier({ images }) {
             smallImage: {
               alt: 'Wristwatch by Ted Baker London',
               isFluidWidth: true,
-              src: selectedImage.smallSrc,
+              src: imgsrc,
             },
             largeImage: {
-              src: selectedImage.largeSrc,
+              src: imgsrclarge,
               width: dimensions.width,
               height: dimensions.height,
             },
@@ -46,7 +48,7 @@ function GaleryMagnifier({ images }) {
       </div>
       <div className='galery__list'>
         <ul>
-          {images.map((item) => (
+          {/* {images.map((item) => (
             <li
               onClick={() => setSelectedImage(item)}
               key={item.id}
@@ -55,7 +57,13 @@ function GaleryMagnifier({ images }) {
               })}>
               <image src={item.thumbSrc} alt='' />
             </li>
-          ))}
+          ))} */}
+          <li className='galery__list__item' key='1'>
+            <img src={imgsrc} alt='' />
+          </li>
+          <li className='galery__list__item' key='2'>
+            <img src={imgsrc} alt='' />
+          </li>
         </ul>
       </div>
     </div>
